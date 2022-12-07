@@ -17,7 +17,11 @@
         <img src="images/logo/ohmyfood.png" alt="">
     </header>
 
-    <p class="localisation">Paris, Belleville</p>
+    <!-- Localisation -->
+    <div class="localisation">
+        <i class="fas fa-map-marker-alt"></i>
+	    <input class="formlocalisation" type="text" name="location" placeholder="Paris, Belleville" />
+    </div>
 
     <!-- Titre -->
     <section class="titreprincipal">
@@ -30,9 +34,15 @@
     <section class="fonctionnement">
         <h2>Fonctionnement</h2>
         <div class="bouttonfonctionnement">
-            <span>Choisissez un restaurant</span>
-            <span>Composez votre menu</span>
-            <span>Dégustez au restaurant</span>
+            <div class="btn-flex">
+                <i class="fa-solid fa-mobile-screen-button"></i><span>Choisissez un restaurant</span>
+            </div>
+            <div class="btn-flex">
+                <i class="fa-solid fa-list"></i><span>Composez votre menu</span>
+            </div>
+            <div class="btn-flex">
+                <i class="fa-solid fa-store"></i><span>Dégustez au restaurant</span>
+            </div>
         </div>
     </section>
 
@@ -44,6 +54,9 @@
             <div class="descriptionrestaurant">
                 <h3>La palette du goût</h3>
                 <p>Ménilmontant</p>
+                <div class="btn-like">
+                    <a href="#"><i class="fa-solid fa-heart heart-color"></i><i class="fa-regular fa-heart heart-empty"></i></a>
+                </div>
             </div>
         </div>
         <div class="restaurant">
@@ -51,6 +64,9 @@
             <div class="descriptionrestaurant">
                 <h3>La note enchantée</h3>
                 <p>Charonne</p>
+                <div class="btn-like">
+                    <a href="#"><i class="fa-solid fa-heart heart-color"></i><i class="fa-regular fa-heart heart-empty"></i></a>
+                </div>
             </div>
         </div>
         <div class="restaurant">
@@ -58,6 +74,9 @@
             <div class="descriptionrestaurant">
                 <h3>A la française</h3>
                 <p>Cité Rouge</p>
+                <div class="btn-like">
+                    <a href="#"><i class="fa-solid fa-heart heart-color"></i><i class="fa-regular fa-heart heart-empty"></i></a>
+                </div>
             </div>
         </div>
         <div class="restaurant">
@@ -65,6 +84,9 @@
             <div class="descriptionrestaurant">
                 <h3>Le délice des sens</h3>
                 <p>Folie-Méricourt</p>
+                <div class="btn-like">
+                    <a href="#"><i class="fa-solid fa-heart heart-color"></i><i class="fa-regular fa-heart heart-empty"></i></a>
+                </div>
             </div>
         </div>
     </section>

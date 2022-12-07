@@ -1,8 +1,13 @@
-@use './variables';
-@use './mixins';
-@use './placeholder';
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+
+:root {
+    --violet: #9356DC;
+    --rose: #FF79DA;
+    --vert: #99E2D0;
+    --grisclair: #D3D3D3;
+    --gristresclair: #F3F3F3;
+}
 
 body {
     font-family: 'Roboto', sans-serif;
@@ -10,9 +15,8 @@ body {
     margin: auto;
 }
 
-h1, h2{
-    font-family: 'Shrikhand', cursive;
-    font-weight: 300;
+h1, h2 {
+    font-family: 'Shrikhand';
 }
 
 h2 {
@@ -42,41 +46,34 @@ img {
 
 /* Localisation */
 .localisation {
-    @include flex-center(row);
-    background-color: $fond-gris;
+    text-align: center;
+    background-color: var(--grisclair);
     padding: 0px 5px 0px 5px;
-
-    .formlocalisation {
-        border: none;
-        background-color: $fond-gris;
-        text-align: center
-    }
 }
 
 /* Titre */
 .titreprincipal {
-    @include flex-center(column);
     text-align: center;
     padding-top: 10px;
     padding-bottom: 50px;
-    background-color: $fond-grisclair;
+    background-color: var(--gristresclair);
 }
 
 .titre {
-    @include flex-wrap;
+    flex-wrap: wrap;
 }
 
 /* Sous-titre */
 .soustitre {
-    @include flex-wrap;
+    flex-wrap: wrap;
     padding-bottom: 10px;
     font-weight: lighter;
 }
 
 /* Bouton de recherche */
 .bouttonrecherche {
-    color: $txt-fond-sombre;
-    background-color:$fond-btn;
+    color: white;
+    background-color:var(--violet);
     border-radius: 15px;
     padding: 10px;
     font-size: small;
@@ -84,21 +81,16 @@ img {
 
 /* Fonctionnement */
 .bouttonfonctionnement {
-    padding-bottom: 20px;
-   @include flex-center(column);
-   
-   &__btn-flex {
-    @include flex-center(row);
-   }
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }
 
 /* Restaurants */
 
 .restaurants {
-    padding-top: 5px;
-    background-color: $fond-grisclair;
+    background-color: var(--gristresclair);
 }
-
 .restaurant img {
     object-fit: cover;
     border-radius: 10px 10px 0px 0px;
@@ -120,7 +112,7 @@ img {
 /* Bas de page */
 .basdepage {
     background-color: #444140;
-    color: $txt-fond-sombre;
+    color: white;
     padding-left: 10px;
     padding-top: 5px;
 }
