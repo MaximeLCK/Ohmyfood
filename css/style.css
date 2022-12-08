@@ -16,6 +16,7 @@ h2 {
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 li {
@@ -53,26 +54,18 @@ img {
   text-align: center;
 }
 
-/* Titre */
 .titreprincipal {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  padding-top: 10px;
-  padding-bottom: 50px;
+  padding: 2rem;
+  text-align: center;
   background-color: #F3F3F3;
 }
 .titreprincipal__titre {
-  display: flex;
-  flex-wrap: wrap;
+  margin: 0;
   font-family: "Shrikhand", cursive;
 }
 .titreprincipal__soustitre {
-  display: flex;
-  flex-wrap: wrap;
-  padding-bottom: 10px;
-  font-weight: lighter;
+  font-weight: 300;
+  margin: 1.5rem 0;
 }
 .titreprincipal__btn {
   color: white;
@@ -84,14 +77,16 @@ img {
 
 /* Fonctionnement */
 .fonctionnement {
-  padding-bottom: 20px;
+  padding-bottom: 2rem;
+}
+.fonctionnement__titre {
+  font-family: "Shrikhand", cursive;
+}
+.fonctionnement__btn {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-}
-.fonctionnement__titre {
-  font-family: "Shrikhand", cursive;
 }
 .fonctionnement__btn-flex {
   display: flex;
@@ -127,8 +122,7 @@ img {
 .basdepage {
   background-color: #444140;
   color: white;
-  padding-left: 10px;
-  padding-top: 5px;
+  padding: 1rem;
 }
 .basdepage__logo {
   font-family: "Shrikhand", cursive;
