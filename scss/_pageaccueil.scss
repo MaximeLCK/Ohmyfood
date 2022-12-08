@@ -6,131 +6,144 @@
       &__logo {
           font-family: "Shrikhand", cursive;
       }
-  }
+    }
   
-  /* Localisation */
-  .localisation {
-      @include flex-center(row);
-      background-color: $fond-gris;
-      padding: 10px 0px 10px 0px;
+/* Localisation */
+.localisation {
+    @include flex-center(row);
+    background-color: $fond-gris;
+    padding: 10px 0px 10px 0px;
   
-      &__form {
-          border: none;
-          background-color: $fond-gris;
-          text-align: center
-      }
-  }
+        &__form {
+            border: none;
+            background-color: $fond-gris;
+            text-align: center
+        }
+    }
   
-  .titreprincipal {
-      padding: 2rem;
-      text-align: center;
-      background-color: $fond-grisclair;
+.titreprincipal {
+    padding: 2rem;
+    text-align: center;
+    background-color: $fond-grisclair;
   
-      &__titre {
-          margin: 0;
-          font-family: "Shrikhand", cursive;
-      }
+        &__titre {
+            margin: 0;
+        }
   
-      &__soustitre {
-          font-weight: 300;
-          margin: 1.5rem 0;
-      }
+        &__soustitre {
+            font-weight: 300;
+            margin: 1.5rem 0;
+        }
   
-      &__btn {
-          color: $txt-fond-sombre;
-          background-color:$fond-btn;
-          border-radius: 15px;
-          padding: 10px;
-          font-size: small;
-      }
-  }
-  
+        &__btn {
+            color: $txt-fond-sombre;
+            background-color:$fond-btn;
+            border-radius: 15px;
+            padding: 10px;
+            font-size: small;
+        }
+    }
   
   
-  /* Fonctionnement */
-  .fonctionnement {
-      padding-bottom: 2rem;
+  
+/* Fonctionnement */
+.fonctionnement {
+    padding-bottom: 2.5rem;
+    padding-top: 1rem;
      
      
-      &__titre {
-          font-family: "Shrikhand", cursive;
-      }
+        &__titre {
+       
+        }
   
-      &__btn {
-          @include flex-center(column);
-      }
+        &__btn {
+            @include flex-center(column);
+        }
   
-      &__btn-flex {
-          @include flex-center(row);
-      }
+        &__btn-flex {
+            @include flex-center(row);
+        }
   
-      &__text {
+        &__text {
   
-      }
-  }
+        }
+    }
   
-  /* Restaurants */
-  .restaurants {
-      padding-top: 5px;
-      background-color: $fond-grisclair;
+/* Restaurants */
+.restaurants {
+    padding-top:1rem;
+    background-color: $fond-grisclair;
   
-      &__titre {
-          font-family: "Shrikhand", cursive;
-      }
-  }
+        &__titre {
+        
+        }
+    }
   
-  .cartes {
+.cartes {
   
-  }
+    }
   
-  .carte {
-      margin: 0px auto;
-      background-color: white;
-      border-radius: 10px;
-      margin: 20px;
+.carte {
+    background-color: white;
+    margin: 1rem;
+    border-radius: 1rem;
+
   
-      &__img {
-          object-fit: cover;
-          border-radius: 10px 10px 0px 0px;
-          height: 160px;
-      }
+        &__img {
+            object-fit: cover;
+            border-radius: 1rem 1rem 0 0;
+            height: 12rem;
+        }
   
-      &__nouveau {
+        &__nouveau {
+
+        }
   
-      }
+        &__description {
   
-      &__description {
-          line-height: 10px;
-          padding: 0px 0px 5px 10px;
-      }
+        }
   
-      &__titre {
+        &__titre {
+            margin: 0;
+            margin-bottom: 0.25rem;
+        }
   
-      }
+        &__soustitre {
+            margin: 0;
+        }
   
-      &__soustitre {
-  
-      }
-  
-      &__btn-like {
-  
-      }
-  }
+        &__btn-like {
+  display: flex;
+
+
+        }
+    }
   
   
-  /* Bas de page */
-  .basdepage {
-      background-color: #444140;
-      color: $txt-fond-sombre;
-      padding: 1rem;
+/* Bas de page */
+.basdepage {
+    background-color: #444140;
+    color: $txt-fond-sombre;
+    padding: 1rem;
   
-      &__logo {
-          font-family: "Shrikhand", cursive;
-      }
-  
-      &__liste {
-  
-      }
-  }
+        &__logo {
+            font-family: "Shrikhand", cursive;
+        }
+
+        &__liens {
+        display: flex;
+        align-items: center;
+        padding: 0.25rem;
+        }
+
+        &__text {
+            padding-left: 1rem;
+        }
+
+        &__text2 {
+            padding-left: 0.6rem;
+        }
+    }
+
   
   

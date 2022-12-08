@@ -61,7 +61,6 @@ img {
 }
 .titreprincipal__titre {
   margin: 0;
-  font-family: "Shrikhand", cursive;
 }
 .titreprincipal__soustitre {
   font-weight: 300;
@@ -77,10 +76,8 @@ img {
 
 /* Fonctionnement */
 .fonctionnement {
-  padding-bottom: 2rem;
-}
-.fonctionnement__titre {
-  font-family: "Shrikhand", cursive;
+  padding-bottom: 2.5rem;
+  padding-top: 1rem;
 }
 .fonctionnement__btn {
   display: flex;
@@ -96,28 +93,30 @@ img {
 }
 /* Restaurants */
 .restaurants {
-  padding-top: 5px;
+  padding-top: 1rem;
   background-color: #F3F3F3;
 }
-.restaurants__titre {
-  font-family: "Shrikhand", cursive;
-}
-
 .carte {
-  margin: 0px auto;
   background-color: white;
-  border-radius: 10px;
-  margin: 20px;
+  margin: 1rem;
+  border-radius: 1rem;
 }
 .carte__img {
   object-fit: cover;
-  border-radius: 10px 10px 0px 0px;
-  height: 160px;
+  border-radius: 1rem 1rem 0 0;
+  height: 12rem;
 }
-.carte__description {
-  line-height: 10px;
-  padding: 0px 0px 5px 10px;
+.carte__titre {
+  margin: 0;
+  margin-bottom: 0.25rem;
 }
+.carte__soustitre {
+  margin: 0;
+}
+.carte__btn-like {
+  display: flex;
+}
+
 /* Bas de page */
 .basdepage {
   background-color: #444140;
@@ -126,6 +125,17 @@ img {
 }
 .basdepage__logo {
   font-family: "Shrikhand", cursive;
+}
+.basdepage__liens {
+  display: flex;
+  align-items: center;
+  padding: 0.25rem;
+}
+.basdepage__text {
+  padding-left: 1rem;
+}
+.basdepage__text2 {
+  padding-left: 0.6rem;
 }
 
 /*# sourceMappingURL=style.css.map */
