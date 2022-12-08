@@ -1,17 +1,137 @@
-/* Error: Undefined mixin.
- *    ,
- * 45 |     @include flex-center(row);
- *    |     ^^^^^^^^^^^^^^^^^^^^^^^^^
- *    '
- *   scss\style.scss 45:5  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined mixin.\a    \2577 \a 45 \2502      @include flex-center(row);\d\a    \2502      ^^^^^^^^^^^^^^^^^^^^^^^^^\a    \2575 \a   scss\\style.scss 45:5  root stylesheet";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+html {
+  scroll-behavior: smooth;
 }
+
+body {
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+  margin: auto;
+}
+
+h2 {
+  margin-left: 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+}
+
+/* Haut de page */
+.hautdepage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, 0.2);
+}
+.hautdepage__logo {
+  font-family: "Shrikhand", cursive;
+}
+
+/* Localisation */
+.localisation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  background-color: #D3D3D3;
+  padding: 10px 0px 10px 0px;
+}
+.localisation__form {
+  border: none;
+  background-color: #D3D3D3;
+  text-align: center;
+}
+
+/* Titre */
+.titreprincipal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 10px;
+  padding-bottom: 50px;
+  background-color: #F3F3F3;
+}
+.titreprincipal__titre {
+  display: flex;
+  flex-wrap: wrap;
+  font-family: "Shrikhand", cursive;
+}
+.titreprincipal__soustitre {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 10px;
+  font-weight: lighter;
+}
+.titreprincipal__btn {
+  color: white;
+  background-color: #FF79DA;
+  border-radius: 15px;
+  padding: 10px;
+  font-size: small;
+}
+
+/* Fonctionnement */
+.fonctionnement {
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.fonctionnement__titre {
+  font-family: "Shrikhand", cursive;
+}
+.fonctionnement__btn-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+/* Restaurants */
+.restaurants {
+  padding-top: 5px;
+  background-color: #F3F3F3;
+}
+.restaurants__titre {
+  font-family: "Shrikhand", cursive;
+}
+
+.carte {
+  margin: 0px auto;
+  background-color: white;
+  border-radius: 10px;
+  margin: 20px;
+}
+.carte__img {
+  object-fit: cover;
+  border-radius: 10px 10px 0px 0px;
+  height: 160px;
+}
+.carte__description {
+  line-height: 10px;
+  padding: 0px 0px 5px 10px;
+}
+/* Bas de page */
+.basdepage {
+  background-color: #444140;
+  color: white;
+  padding-left: 10px;
+  padding-top: 5px;
+}
+.basdepage__logo {
+  font-family: "Shrikhand", cursive;
+}
+
+/*# sourceMappingURL=style.css.map */

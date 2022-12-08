@@ -12,108 +12,135 @@
 </head>
 
 <body>
-    
- <!-- Haut de page -->
- <header>
-    <img src="images/logo/ohmyfood.png" alt="">
-    <img src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="">
-</header>
+   
+     <!-- Haut de page -->
+     <header class="hautdepage hautdepage--avecretour">
+        <h1 class="hautdepage__logo">ohmyfood</h1>
+    </header>
 
- <!-- Menu -->
- <section class="menuledelicedessens">
-    <h2 class="titremenu">Le délice des sens</h2>
+    <img src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="" class="hautdepage__img">
+
+<main>
+    <section class="menu">
+        <!-- Menu Titre -->
+        <div class="menu__hautdepage">
+            <h2 class="menu__titre">Le délice des sens</h2>
+            <button class="menu_btn-like">
+
+            </button>
+        </div>
     
         <!-- Entrées -->
-        <h4 class="menunavledelicedessens">ENTREES</h4>
-        <div class="platsledelicedessens">
-            <h5>Tartare de thon</h5>
-            <div>
-                <p class="descriptionledelicedessens">Assaisonné au yuzu</p>
-                <span><strong>25€</strong></span>
+        <section class="menu__navigation">
+            <h3 class="menu__soustitre">ENTREES</h3>
+
+            <div class="menu__cartes">
+
+                <div class="menu__carte">
+                    <h4 class="menu__carte-titre">Tartare de thon</h4>
+                <div class="menu__carte-description">
+                    <p class="menu__carte-text">Assaisonné au yuzu</p>
+                    <p class="menu_carte-prix">25€</p>
+                </div>
+                </div>
+            
+                <div class="menu__carte">
+                    <h4 class="menu__carte-titre">Bouchée de homard croustillant</h4>
+                    <div class="menu__carte-description">
+                        <p class="menu__carte-text">Et sa farandole de petits légumes</p>
+                        <p class="menu_carte-prix">35€</p>
+                    </div>
+                </div>
+
+                <div class="menu__carte">
+                    <h4 class="menu__carte-titre">Velouté de cèpes</h4>
+                    <div class="menu__carte-description">
+                        <p class="menu__carte-text">Aux truffes</p>
+                        <p class="menu__carte-prix">20€</p>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="platsledelicedessens">
-            <h5>Bouchée de homard croustillant</h5>
-            <div>
-                <p class="descriptionledelicedessens">Et sa farandole de petits légumes</p>
-                <span><strong>35€</strong></span>
-            </div>
-        </div>
-        <div class="platsledelicedessens">
-            <h5>Velouté de cèpes</h5>
-            <div>
-                <p class="descriptionledelicedessens">Aux truffes</p>
-                <span><strong>20€</strong></span>
-            </div>
-        </div>
+        </section>
    
 
         <!-- Plats -->
-        <h4 class="menunavledelicedessens">PLATS</h4>
-        <div class="platsledelicedessens">
-            <h5>Poulet rôti aux herbes de Provence</h5>
-            <div>
-                <p class="descriptionledelicedessens">Et sa crème de truffe</p>
-                <span><strong>40€</strong></span>
+        <section class="menu__navigation">
+            <h3 class="menu__soustitre">PLATS</h3>
+
+            <div class="menu__carte">
+                <h4 class="menu__carte-titre">Poulet rôti aux herbes de Provence</h4>
+                <div class="menu__carte-description">
+                    <p class="menu__carte-text">et sa crème de truffe</p>
+                    <p class="menu__carte-prix">40€</p>
+                </div>
             </div>
-        </div>
-        <div class="platsledelicedessens">
-            <h5>Langouste rôtie</h5>
-            <div>
-                <p class="descriptionledelicedessens">Et ses légumes de saison</p>
-                <span><strong>35€</strong></span>
+
+            <div class="menu__carte">
+                <h4 class="menu__carte-titre">Langouste rôtie</h4>
+                <div class="menu__carte-description">
+                    <p class="menu__carte-text">Et ses légumes de saison</p>
+                    <p class="menu__carte-prix">35€</p>
+                </div>
             </div>
-        </div>
-        <div class="platsledelicedessens">
-            <h5>Côte de boeuf Angus</h5>
-            <div>
-                <p class="descriptionledelicedessens">Et sa purée de panais</p>
-                <span><strong>44€</strong></span>
+
+            <div class="menu__carte">
+                <h4 class="menu__carte-titre">Côte de boeuf Angus</h4>
+                <div class="menu__carte-description">
+                    <p class="menu__carte-text">Et sa purée  de panais</p>
+                    <p class="menu__carte-prix">44€</p>
+                </div>
             </div>
-        </div>
+        </section>
 
         <!-- Desserts -->
-        <h4 class="menunavledelicedessens">DESSERTS</h4>
-        <div class="platsledelicedessens">
-            <h5>Farandole de desserts</h5>
-            <div>
-                <p class="descriptionledelicedessens">Du chef</p>
-                <span><strong>18€</strong></span>
-            </div>
-        </div>
-        <div class="platsledelicedessens">
-            <h5>Crème brûlée</h5>
-            <div>
-                <p class="descriptionledelicedessens">Revisité</p>
-                <span><strong>22€</strong></span>
-            </div>
-        </div>
-        <div class="platsledelicedessens">
-            <h5>Tiramisu</h5>
-            <div>
-                <p class="descriptionledelicedessens">A la noisette</p>
-                <span><strong>23€</strong></span>
-            </div>
-        </div>
-    </section>
+        <section class="menu__navigation">
+            <h3 class="menu__soustitre">DESSERTS</h3>
 
-    <div class="bouttoncommander">
-        <span>Commander</span>
-    </div>
+            <div class="menu__carte">
+                <h4 class="menu__carte-titre">Farandole de desserts</h4>
+                <div class="menu__carte-description">
+                    <p class="menu__carte-text">Du chef</p>
+                    <p class="menu__carte-prix">18€</p>
+                </div>
+            </div>
+
+            <div class="menu__carte">
+                <h4 class="menu__carte-titre">Crème brûlée</h4>
+                <div class="menu__carte-description">
+                    <p class="menu__carte-text">Revisitée</p>
+                    <p class="menu__carte-prix">22€</p>
+                </div>
+            </div>
+
+            <div class="menu__carte">
+                <h4 class="menu__carte-titre">Tiramisu</h4>
+                <div class="menu__carte-description">
+                    <p class="menu__carte-text">A la noisette</p>
+                    <p class="menu__carte-prix">23€</p>
+                </div>
+            </div>
+        </section>
+
+            <div class="bouttoncommander">
+                <span>Commander</span>
+            </div>
+
+    </section>
 
     <!-- Bas de page -->
     <section class="basdepage">
-        <img src="images/logo/ohmyfood.png" alt="">
-        <div class="liensbasdepage">
+        <p class="basdepage__logo">ohmyfood</p>
+        <div class="basdepage__liste">
             <ul>
-                <li><a href="">Proposer un restaurant</a></li>
-                <li><a href="">Devenir partenaire</a></li>
-                <li><a href="">Mentions légales</a></li>
-                <li><a href="">Contact</a></li>
+                <li><a class="basdepage__liens" href="#">Proposer un restaurant</a></li>
+                <li><a class="basdepage__liens" href="#">Devenir partenaire</a></li>
+                <li><a class="basdepage__liens" href="#">Mentions légales</a></li>
+                <li><a class="basdepage__liens" href="#">Contact</a></li>
             </ul>
         </div>
     </section>
 
+</main>
 
 </body>
 </html>

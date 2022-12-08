@@ -1,18 +1,17 @@
-@use './variables';
-@use './mixins';
-@use './placeholder';
+@import './variables';
+@import './mixins';
+@import './placeholder';
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
     margin: auto;
-}
-
-h1, h2{
-    font-family: 'Shrikhand', cursive;
-    font-weight: 300;
 }
 
 h2 {
@@ -32,21 +31,21 @@ img {
 }
 
 /* Haut de page */
-.hautdepage img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 15px;
-    width: 50%;
+.hautdepage {
+  @include flex-center(row);
+  box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+    &__logo {
+        font-family: "Shrikhand", cursive;
+    }
 }
 
 /* Localisation */
 .localisation {
     @include flex-center(row);
     background-color: $fond-gris;
-    padding: 0px 5px 0px 5px;
+    padding: 10px 0px 10px 0px;
 
-    .formlocalisation {
+    &__form {
         border: none;
         background-color: $fond-gris;
         text-align: center
@@ -56,66 +55,102 @@ img {
 /* Titre */
 .titreprincipal {
     @include flex-center(column);
-    text-align: center;
     padding-top: 10px;
     padding-bottom: 50px;
     background-color: $fond-grisclair;
+
+   
+    &__titre {
+        @include flex-wrap;
+        font-family: "Shrikhand", cursive;
+    }
+
+    &__soustitre {
+        @include flex-wrap;
+        padding-bottom: 10px;
+        font-weight: lighter;
+    }
+
+    &__btn {
+        color: $txt-fond-sombre;
+        background-color:$fond-btn;
+        border-radius: 15px;
+        padding: 10px;
+        font-size: small;
+    }
 }
 
-.titre {
-    @include flex-wrap;
-}
-
-/* Sous-titre */
-.soustitre {
-    @include flex-wrap;
-    padding-bottom: 10px;
-    font-weight: lighter;
-}
-
-/* Bouton de recherche */
-.bouttonrecherche {
-    color: $txt-fond-sombre;
-    background-color:$fond-btn;
-    border-radius: 15px;
-    padding: 10px;
-    font-size: small;
-}
 
 /* Fonctionnement */
-.bouttonfonctionnement {
+.fonctionnement {
     padding-bottom: 20px;
    @include flex-center(column);
    
-   &__btn-flex {
-    @include flex-center(row);
-   }
+    &__titre {
+        font-family: "Shrikhand", cursive;
+    }
+
+    &__btn {
+
+    }
+
+    &__btn-flex {
+        @include flex-center(row);
+    }
+
+    &__text {
+
+    }
 }
 
 /* Restaurants */
-
 .restaurants {
     padding-top: 5px;
     background-color: $fond-grisclair;
+
+    &__titre {
+        font-family: "Shrikhand", cursive;
+    }
 }
 
-.restaurant img {
-    object-fit: cover;
-    border-radius: 10px 10px 0px 0px;
-    height: 160px;
+.cartes {
+
 }
 
-.restaurant {
+.carte {
     margin: 0px auto;
     background-color: white;
     border-radius: 10px;
     margin: 20px;
+
+    &__img {
+        object-fit: cover;
+        border-radius: 10px 10px 0px 0px;
+        height: 160px;
+    }
+
+    &__nouveau {
+
+    }
+
+    &__description {
+        line-height: 10px;
+        padding: 0px 0px 5px 10px;
+    }
+
+    &__titre {
+
+    }
+
+    &__soustitre {
+
+    }
+
+    &__btn-like {
+
+    }
 }
 
-.descriptionrestaurant {
-    line-height: 10px;
-    padding: 0px 0px 5px 10px;
-}
 
 /* Bas de page */
 .basdepage {
@@ -123,5 +158,13 @@ img {
     color: $txt-fond-sombre;
     padding-left: 10px;
     padding-top: 5px;
+
+    &__logo {
+        font-family: "Shrikhand", cursive;
+    }
+
+    &__liste {
+
+    }
 }
 
