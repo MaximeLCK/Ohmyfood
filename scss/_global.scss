@@ -24,3 +24,19 @@ li {
 img {
     width: 100%;
 }
+
+
+/* Haut de page */
+.hautdepage {
+    @include flex-center(row);
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+      &__logo {
+          font-family: "Shrikhand", cursive;
+      }
+
+      &__img {
+        object-fit: cover;
+        height: 20rem;
+      }
+    }
+  

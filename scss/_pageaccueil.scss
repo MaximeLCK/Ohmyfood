@@ -1,18 +1,9 @@
 
-/* Haut de page */
-.hautdepage {
-    @include flex-center(row);
-    box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
-      &__logo {
-          font-family: "Shrikhand", cursive;
-      }
-    }
-  
 /* Localisation */
 .localisation {
     @include flex-center(row);
     background-color: $fond-gris;
-    padding: 10px 0px 10px 0px;
+    padding: 0.75rem;
   
         &__form {
             border: none;
@@ -100,7 +91,7 @@
         }
   
         &__description {
-  
+            padding: 1rem;
         }
   
         &__titre {
@@ -113,7 +104,7 @@
         }
   
         &__btn-like {
-  display: flex;
+            display: flex;
 
 
         }
