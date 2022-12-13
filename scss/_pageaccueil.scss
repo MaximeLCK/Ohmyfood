@@ -1,4 +1,3 @@
-
 /* Localisation */
 .localisation {
     @include flex-center(row);
@@ -27,11 +26,7 @@
         }
   
         &__btn {
-            color: $txt-fond-sombre;
-            background-color:$fond-btn;
-            border-radius: 15px;
-            padding: 10px;
-            font-size: small;
+          @include btn-primary
         }
     }
   
@@ -109,32 +104,5 @@
 
         }
     }
-  
-  
-/* Bas de page */
-.basdepage {
-    background-color: #444140;
-    color: $txt-fond-sombre;
-    padding: 1rem;
-  
-        &__logo {
-            font-family: "Shrikhand", cursive;
-        }
-
-        &__liens {
-        display: flex;
-        align-items: center;
-        padding: 0.25rem;
-        }
-
-        &__text {
-            padding-left: 1rem;
-        }
-
-        &__text2 {
-            padding-left: 0.6rem;
-        }
-    }
-
-  
+ 
   
