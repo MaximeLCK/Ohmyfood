@@ -19,10 +19,6 @@ a {
   color: inherit;
 }
 
-li {
-  list-style: none;
-}
-
 img {
   width: 100%;
 }
@@ -62,6 +58,9 @@ img {
 }
 .basdepage__text2 {
   padding-left: 0.6rem;
+}
+.basdepage__list {
+  list-style: none;
 }
 
 /* Localisation */
@@ -119,10 +118,14 @@ img {
   flex-direction: column;
 }
 .fonctionnement__btn-flex {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
+  background-color: #F3F3F3;
+  padding: 1rem 2rem;
+  margin: 1rem;
+  border-radius: 2rem;
+  width: 20rem;
+}
+.fonctionnement__icon {
+  padding: 1rem;
 }
 /* Restaurants */
 .restaurants {

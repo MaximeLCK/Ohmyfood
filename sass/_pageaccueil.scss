@@ -47,11 +47,18 @@
         }
   
         &__btn-flex {
-            @include flex-center(row);
+            background-color: $fond-grisclair; 
+            padding: 1rem 2rem;
+            margin: 1rem;   
+            border-radius: 2rem;
+            width: 20rem;
+        }
+
+        &__icon {
+            padding: 1rem;
         }
   
         &__text {
-  
         }
     }
   
