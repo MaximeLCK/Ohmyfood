@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sass" : "sass --watch ./sass/main.scss:./css/style.css"
+    "dev" : "sass --watch ./sass/main.scss:./css/style.css"
+  },
+  "devDependencies": {
+    "sass" : "^1.56.2"
   },
   "repository": {
     "type": "git",

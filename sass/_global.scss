@@ -1,3 +1,8 @@
+@use "./mixins" as m;
+@use "./variables" as v;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+
 html {
     scroll-behavior: smooth;
 }
@@ -24,7 +29,7 @@ img {
 
 /* Haut de page */
 .hautdepage {
-    @include flex-center(row);
+    @include m.flex-center(row);
     box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
       &__logo {
           font-family: "Shrikhand", cursive;
@@ -39,7 +44,7 @@ img {
 /* Bas de page */
 .basdepage {
     background-color: #444140;
-    color: $txt-fond-sombre;
+    color: v.$txt-fond-sombre;
     padding: 1rem;
   
         &__logo {
