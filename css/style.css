@@ -11,7 +11,7 @@ body {
 }
 
 h2 {
-  margin-left: 20px;
+  margin-left: 1rem;
 }
 
 a {
@@ -79,23 +79,24 @@ img {
 }
 
 .titreprincipal {
-  padding: 2rem;
-  text-align: center;
+  padding: 2.5rem;
+  padding-bottom: 3.5rem;
   background-color: #F3F3F3;
+  text-align: center;
 }
 .titreprincipal__titre {
   margin: 0;
 }
 .titreprincipal__soustitre {
   font-weight: 300;
-  margin: 1.5rem 0;
+  margin: 1rem;
+  margin-bottom: 2rem;
 }
 .titreprincipal__btn {
   color: white;
   background-image: linear-gradient(45deg, rgb(220, 126, 233), rgb(171, 62, 204));
-  border-radius: 50px;
-  padding: 0.75rem 1rem;
-  font-size: small;
+  border-radius: 10rem;
+  padding: 1rem 1.5rem;
   border: 0;
   box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
   cursor: pointer;
@@ -116,16 +117,19 @@ img {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin: 0;
+  padding: 0;
 }
 .fonctionnement__btn-flex {
   background-color: #F3F3F3;
-  padding: 1rem 2rem;
-  margin: 1rem;
+  padding: 1rem;
+  margin: 1rem 1rem;
   border-radius: 2rem;
+  box-shadow: 1px 3px 11px 1px rgba(0, 0, 0, 0.25);
   width: 20rem;
 }
 .fonctionnement__icon {
-  padding: 1rem;
+  padding: 1rem 1rem;
 }
 /* Restaurants */
 .restaurants {

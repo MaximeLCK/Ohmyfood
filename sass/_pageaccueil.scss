@@ -12,9 +12,11 @@
     }
   
 .titreprincipal {
-    padding: 2rem;
-    text-align: center;
+    padding: 2.5rem;
+    padding-bottom: 3.5rem;
     background-color: $fond-grisclair;
+    text-align: center;
+ 
   
         &__titre {
             margin: 0;
@@ -22,7 +24,8 @@
   
         &__soustitre {
             font-weight: 300;
-            margin: 1.5rem 0;
+            margin: 1rem;
+            margin-bottom: 2rem;
         }
   
         &__btn {
@@ -44,18 +47,21 @@
   
         &__btn {
             @include flex-center(column);
+            margin: 0;
+            padding: 0;
         }
   
         &__btn-flex {
             background-color: $fond-grisclair; 
-            padding: 1rem 2rem;
-            margin: 1rem;   
+            padding: 1rem;
+            margin: 1rem 1rem;   
             border-radius: 2rem;
-            width: 20rem;
+            box-shadow: 1px 3px 11px 1px rgba(0, 0, 0, 0.25); 
+            width: 20rem;  
         }
 
         &__icon {
-            padding: 1rem;
+            padding: 1rem 1rem;
         }
   
         &__text {
