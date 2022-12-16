@@ -52,8 +52,7 @@
 .fonctionnement {
     padding-bottom: 2rem;
     padding-top: 1rem;
-    margin: 1rem;
-      
+    padding-right: 1rem;
      
         &__titre {
        padding-bottom: 0.5rem;
@@ -95,7 +94,8 @@
         }
 
         &__icon {
-            margin-right: 1rem;
+            margin-left: 1rem;
+            margin-right: 2.5rem;
             color: v.$icon-grisfonce;
             font-size: 1.25rem;
         }
@@ -108,14 +108,27 @@
 .restaurants {
     padding-top:1rem;
     background-color: v.$fond-grisclair;
-  
+  @media(min-width:768px) {
+    display: grid;
+
+
+  }
         &__titre {
         
         }
     }
   
 .cartes {
-
+display: grid;
+grid-template-columns: repeat(1, 1fr);
+gap: 2rem;
+@media (min-width:768px){
+    grid-template-columns: repeat(2,1fr);
+    padding-bottom: 1rem;
+}
+@media (min-width:1400px){
+    grid-template-columns: repeat(4,1fr);
+}
     }
   
 .carte {
@@ -124,9 +137,10 @@
     position: relative;
  
         &__img {
-            object-fit: cover;
+            background-size: cover;
             border-radius: 1rem 1rem 0 0;
-            height: 12rem;
+            height: 15rem;
+            background-image: url("../images/restaurants/menu-1.jpg");
         }
   
         &__nouveau {
@@ -136,7 +150,6 @@
             border-radius: 0.125rem;
             position: absolute;
             top: 1rem;
-            right: 0.75rem;
         }
   
         &__description {
@@ -165,6 +178,6 @@
         &__soustitre {
             margin: 0;
         }
+        
     }
- 
   

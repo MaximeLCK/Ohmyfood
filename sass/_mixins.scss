@@ -23,9 +23,13 @@
     transition-duration: 0.25s;
 
     &:hover {
-        @include gradient-primary();
-        box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.50);
+        @include btn-hover-primary; 
     }
+}
+
+@mixin btn-hover-primary {
+    background-image:linear-gradient(to top, rgb(220, 152, 228),rgb(179, 93, 206));
+    box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.50);
 }
 
 @mixin gradient-primary {

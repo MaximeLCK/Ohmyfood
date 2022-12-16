@@ -103,7 +103,7 @@ img {
   transition-duration: 0.25s;
 }
 .titreprincipal__btn:hover {
-  background-image: linear-gradient(to top, rgb(220, 145, 229), rgb(176, 78, 206));
+  background-image: linear-gradient(to top, rgb(220, 152, 228), rgb(179, 93, 206));
   box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.5);
 }
 
@@ -111,7 +111,7 @@ img {
 .fonctionnement {
   padding-bottom: 2rem;
   padding-top: 1rem;
-  margin: 1rem;
+  padding-right: 1rem;
 }
 .fonctionnement__titre {
   padding-bottom: 0.5rem;
@@ -154,7 +154,8 @@ img {
   left: -1rem;
 }
 .fonctionnement__icon {
-  margin-right: 1rem;
+  margin-left: 1rem;
+  margin-right: 2.5rem;
   color: #7e7e7e;
   font-size: 1.25rem;
 }
@@ -163,15 +164,38 @@ img {
   padding-top: 1rem;
   background-color: #F3F3F3;
 }
+@media (min-width: 768px) {
+  .restaurants {
+    display: grid;
+  }
+}
+.cartes {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 2rem;
+}
+@media (min-width: 768px) {
+  .cartes {
+    grid-template-columns: repeat(2, 1fr);
+    padding-bottom: 1rem;
+  }
+}
+@media (min-width: 1400px) {
+  .cartes {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
 .carte {
   margin: 1rem;
   border-radius: 1rem;
   position: relative;
 }
 .carte__img {
-  object-fit: cover;
+  background-size: cover;
   border-radius: 1rem 1rem 0 0;
-  height: 12rem;
+  height: 15rem;
+  background-image: url("../images/restaurants/menu-1.jpg");
 }
 .carte__nouveau {
   background-color: #99E2D0;
@@ -180,7 +204,6 @@ img {
   border-radius: 0.125rem;
   position: absolute;
   top: 1rem;
-  right: 0.75rem;
 }
 .carte__description {
   position: relative;
