@@ -41,31 +41,54 @@
   
 /* Fonctionnement */
 .fonctionnement {
-    padding-bottom: 2.5rem;
+    padding-bottom: 2rem;
     padding-top: 1rem;
-     
+    margin: 1rem;
+      
      
         &__titre {
-       
+       padding-bottom: 0.5rem;
         }
   
         &__btn {
-            @include m.flex-center(column);
-            margin: 0;
-            padding: 0;
+            list-style: none;
+            counter-reset: listechiffre;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            gap: 2rem;
+            @media (min-width: 768px) {
+                flex-direction: row;
+            }
         }
   
         &__btn-flex {
             background-color: v.$fond-grisclair; 
-            padding: 1rem;
-            margin: 1rem 1rem;   
-            border-radius: 2rem;
-            box-shadow: 1px 3px 11px 1px rgba(0, 0, 0, 0.25); 
-            width: 20rem;  
+            padding: 1.5rem 2rem;   
+            border-radius: 1.25rem;
+            @include m.box-shadow-primary;
+            flex-grow: 1;
+            position: relative;
+
+            &::before {
+                content: counter(listechiffre) ;
+                counter-increment: listechiffre;
+                background-color: v.$color-primary;
+                color: v.$txt-fond-sombre;
+                border-radius: 1rem;
+                width: 2rem; 
+                height: 2rem;
+                @include m.flex-center(row);
+                position: absolute;
+                bottom: 1rem;
+                left: -1rem;
+            }
         }
 
         &__icon {
-            padding: 1rem 1rem;
+            margin-right: 1rem;
+            color: v.$icon-grisfonce;
+            font-size: 1.25rem;
         }
   
         &__text {

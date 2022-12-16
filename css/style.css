@@ -109,27 +109,54 @@ img {
 
 /* Fonctionnement */
 .fonctionnement {
-  padding-bottom: 2.5rem;
+  padding-bottom: 2rem;
   padding-top: 1rem;
+  margin: 1rem;
+}
+.fonctionnement__titre {
+  padding-bottom: 0.5rem;
 }
 .fonctionnement__btn {
+  list-style: none;
+  counter-reset: listechiffre;
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
-  margin: 0;
-  padding: 0;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+@media (min-width: 768px) {
+  .fonctionnement__btn {
+    flex-direction: row;
+  }
 }
 .fonctionnement__btn-flex {
   background-color: #F3F3F3;
-  padding: 1rem;
-  margin: 1rem 1rem;
-  border-radius: 2rem;
-  box-shadow: 1px 3px 11px 1px rgba(0, 0, 0, 0.25);
-  width: 20rem;
+  padding: 1.5rem 2rem;
+  border-radius: 1.25rem;
+  box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
+  flex-grow: 1;
+  position: relative;
+}
+.fonctionnement__btn-flex::before {
+  content: counter(listechiffre);
+  counter-increment: listechiffre;
+  background-color: #9356DC;
+  color: white;
+  border-radius: 1rem;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  position: absolute;
+  bottom: 1rem;
+  left: -1rem;
 }
 .fonctionnement__icon {
-  padding: 1rem 1rem;
+  margin-right: 1rem;
+  color: #7e7e7e;
+  font-size: 1.25rem;
 }
 /* Restaurants */
 .restaurants {
