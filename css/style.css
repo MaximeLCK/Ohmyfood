@@ -96,15 +96,17 @@ img {
   color: white;
   background-image: linear-gradient(to top, rgb(220, 145, 229), rgb(176, 78, 206));
   border-radius: 10rem;
-  padding: 1rem 1.5rem;
+  padding: 1rem 1rem;
   border: 0;
   box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
   cursor: pointer;
-  transition-duration: 0.25s;
+  transition-duration: 0.5s;
+  font-size: 0.9rem;
 }
 .titreprincipal__btn:hover {
   background-image: linear-gradient(to top, rgb(220, 152, 228), rgb(179, 93, 206));
   box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.5);
+  transform: scale(1.1);
 }
 
 /* Fonctionnement */
@@ -136,6 +138,13 @@ img {
   box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
   flex-grow: 1;
   position: relative;
+}
+.fonctionnement__btn-flex:hover {
+  background-color: #f2eafb;
+  transform: scale(1.05);
+}
+.fonctionnement__btn-flex:hover i {
+  color: #9356DC;
 }
 .fonctionnement__btn-flex::before {
   content: counter(listechiffre);

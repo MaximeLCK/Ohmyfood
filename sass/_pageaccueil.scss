@@ -44,6 +44,7 @@
         &__btn {
           @include m.btn-primary
         }
+    
     }
   
   
@@ -77,6 +78,13 @@
             @include m.box-shadow-primary;
             flex-grow: 1;
             position: relative;
+            &:hover {
+               background-color: lighten(v.$color-primary,35%) ;
+               transform: scale(1.05);
+               & i{
+                color:v.$color-primary;
+               }
+            }
 
             &::before {
                 content: counter(listechiffre) ;
