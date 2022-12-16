@@ -164,17 +164,28 @@ img {
   background-color: #F3F3F3;
 }
 .carte {
-  background-color: white;
   margin: 1rem;
   border-radius: 1rem;
+  position: relative;
 }
 .carte__img {
   object-fit: cover;
   border-radius: 1rem 1rem 0 0;
   height: 12rem;
 }
+.carte__nouveau {
+  background-color: #99E2D0;
+  color: #1b6150;
+  padding: 0.5rem;
+  border-radius: 0.125rem;
+  position: absolute;
+  top: 1rem;
+  right: 0.75rem;
+}
 .carte__description {
+  background-color: white;
   padding: 1rem;
+  border-radius: 0rem 0rem 1rem 1rem;
 }
 .carte__titre {
   margin: 0;
@@ -184,7 +195,10 @@ img {
   margin: 0;
 }
 .carte__btn-like {
-  display: flex;
+  font-size: 2rem;
+  position: absolute;
+  right: 2rem;
+  top: 13.5rem;
 }
 
 /*# sourceMappingURL=style.css.map */
