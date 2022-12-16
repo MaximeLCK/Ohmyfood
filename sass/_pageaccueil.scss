@@ -1,6 +1,14 @@
 @use "./variables" as v;
 @use "./mixins" as m;
 
+
+// Loader
+.loader {
+height: 100%;
+width: 100%;
+
+}
+
 /* Localisation */
 .localisation {
     @include m.flex-center(row);
@@ -132,9 +140,21 @@
         }
   
         &__description {
+            position: relative;
             background-color: white;
             padding: 1rem;
             border-radius: 0rem 0rem 1rem 1rem;
+            &::before {
+                @include m.coeur;             
+            }
+            &::after {
+                @include m.coeur($opacity:0, $font-weight:900, $color:transparent);
+                @include m.gradient-primary;
+            }
+            &:hover::after {
+                opacity: 1;
+                transform: scale(1.2);
+            }
         }
   
         &__titre {
@@ -145,14 +165,6 @@
         &__soustitre {
             margin: 0;
         }
-  
-        &__btn-like {
-            font-size: 2rem;
-            position: absolute;
-            right: 2rem;
-            top:13.5rem;
-        }
-
     }
  
   
