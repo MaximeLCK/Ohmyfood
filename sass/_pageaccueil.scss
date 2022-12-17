@@ -146,6 +146,10 @@ gap: 2rem;
     margin: 1rem;
     border-radius: 1rem;
     position: relative;
+
+        &:hover{
+            transform: scale(1.01);
+        }
  
         &__img {
             background-size: cover;

@@ -207,6 +207,9 @@ img {
   border-radius: 1rem;
   position: relative;
 }
+.carte:hover {
+  transform: scale(1.01);
+}
 .carte__img {
   background-size: cover;
   border-radius: 1rem 1rem 0 0;
