@@ -16,7 +16,7 @@
     color: v.$txt-fond-sombre;
     @include gradient-primary();
     border-radius: 10rem;
-    padding: 1rem 1rem;
+    padding: 1rem 2rem;
     border: 0;
     box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
     cursor: pointer;
@@ -35,7 +35,7 @@
 }
 
 @mixin gradient-primary {
-    background-image:linear-gradient(to top, rgb(220, 145, 229),rgb(176, 78, 206));
+    background-image:linear-gradient(to top, rgb(216, 140, 224),rgb(176, 78, 206));
 }
 
 @mixin box-shadow-primary {
