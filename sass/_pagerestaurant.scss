@@ -1,0 +1,90 @@
+@use "./mixins" as m;
+@use "./variables" as v;
+
+.hautdepage --avecretour {
+    position: relative;
+
+    &__fleche-retour {
+        position: absolute;
+        left:4rem;
+    }
+
+    &__img {
+    object-fit: cover;
+    }
+}
+
+.menu {
+    background-color: v.$fond-grisclair;
+    padding: 1rem 1rem;
+    border-radius: 2rem 2rem 0 0; 
+    position: relative;
+    top:-2rem;
+    &__hautdepage {
+   
+
+    }
+
+    &__titre {
+        font-family: "Shrikhand", cursive;
+        font-size: 2rem;
+        position: relative;
+        &::before {
+            @include m.coeur;
+            top:0rem;           
+        }
+        &::after {
+            @include m.coeur($opacity:0, $font-weight:900, $color:transparent);
+            @include m.gradient-primary;
+            top:0rem;
+        }
+        &:hover::after {
+            opacity: 1;
+            transform: scale(1.2);
+        }
+    }
+
+    &__soustitre {
+
+    }
+
+    &__btn {
+
+    }
+
+    &__btn-like {
+   
+    }
+
+    &__navigation {
+
+    }
+
+}
+
+.menucartes {
+
+}
+
+.menucarte {
+
+    &__titre {
+
+    }
+
+    &__description {
+
+    }
+
+    &__text {
+
+    }
+
+    &__prix {
+
+    }
+}
+
+.bouttoncommander {
+
+}
