@@ -1,5 +1,6 @@
 @use "./mixins" as m;
 @use "./variables" as v;
+@use "./animations" as a;
 
 .hautdepage --avecretour {
     position: relative;
@@ -85,35 +86,65 @@
 }
 
 .menucarte {
-    margin: 1rem;
+    display: flex;
     border-radius: 1rem;
     @include m.box-shadow-primary;
+    margin: 1rem;
+    overflow: hidden;
+
+
     &__titre {
-    padding-bottom: 0.3rem;
+
     }
 
     &__description {
-    display: flex;
-    padding: 1rem;
-    p {
-        margin: auto;
- 
-    }
- 
+        padding: 1rem;
+        p {
+            margin: auto;
+        }
     }
 
     &__text {
-
-    }
-
-    &__annotation {
         font-size: 0.95rem;
     }
 
     &__prix {
-      padding-top:1rem;
         margin-left: auto;
         font-weight: bold;
+        padding: 1rem;
+        font-size: 0.95rem;
+        display: flex;
+        align-items: flex-end;
+    }
+
+    &__check {
+        background-color: v.$color-tertiary;
+        border-radius: 0rem 1rem 1rem 0rem;
+        width: 4rem;
+        margin-right: -4rem;
+        transition: margin-right 0.75s;
+        display: grid;
+        place-items: center;
+
+        & i {
+            display: grid;
+            place-items: center;
+            background-color: white;
+            border-radius: 1rem;
+            width: 1.5rem;
+            aspect-ratio: 1;
+            color: v.$color-tertiary;
+        }
+    }
+
+    &:hover {
+        .menucarte__check{
+            margin-right: 0;
+        }
+
+        i {
+            animation: icone360 0.75s;
+        }
     }
 }
 

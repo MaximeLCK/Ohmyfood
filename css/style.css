@@ -319,6 +319,14 @@ img {
   margin: 0;
 }
 
+@keyframes icone360 {
+  0% {
+    transform: rotate(-360deg);
+  }
+  100% {
+    transform: rotate 0;
+  }
+}
 .hautdepage --avecretour {
   position: relative;
 }
@@ -414,27 +422,52 @@ img {
 }
 
 .menucarte {
-  margin: 1rem;
+  display: flex;
   border-radius: 1rem;
   box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
-}
-.menucarte__titre {
-  padding-bottom: 0.3rem;
+  margin: 1rem;
+  overflow: hidden;
 }
 .menucarte__description {
-  display: flex;
   padding: 1rem;
 }
 .menucarte__description p {
   margin: auto;
 }
-.menucarte__annotation {
+.menucarte__text {
   font-size: 0.95rem;
 }
 .menucarte__prix {
-  padding-top: 1rem;
   margin-left: auto;
   font-weight: bold;
+  padding: 1rem;
+  font-size: 0.95rem;
+  display: flex;
+  align-items: flex-end;
+}
+.menucarte__check {
+  background-color: #99E2D0;
+  border-radius: 0rem 1rem 1rem 0rem;
+  width: 4rem;
+  margin-right: -4rem;
+  transition: margin-right 0.75s;
+  display: grid;
+  place-items: center;
+}
+.menucarte__check i {
+  display: grid;
+  place-items: center;
+  background-color: white;
+  border-radius: 1rem;
+  width: 1.5rem;
+  aspect-ratio: 1;
+  color: #99E2D0;
+}
+.menucarte:hover .menucarte__check {
+  margin-right: 0;
+}
+.menucarte:hover i {
+  animation: icone360 0.75s;
 }
 
 .commander {
