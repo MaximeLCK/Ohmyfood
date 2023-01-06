@@ -14,6 +14,11 @@ h2 {
   margin-left: 1rem;
 }
 
+h4 {
+  margin: 0;
+  padding: 0;
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -43,10 +48,11 @@ img {
 .basdepage {
   background-color: rgb(51, 51, 51);
   color: white;
-  padding: 1rem;
+  padding: 0.5rem 0rem;
 }
 .basdepage__logo {
   font-family: "Shrikhand", cursive;
+  padding-left: 2.6rem;
 }
 .basdepage__liens {
   display: flex;
@@ -328,6 +334,8 @@ img {
   background-color: #F3F3F3;
   padding: 1rem 1rem;
   border-radius: 2rem 2rem 0 0;
+  position: relative;
+  bottom: 2rem;
 }
 .menu__titre {
   font-family: "Shrikhand", cursive;
@@ -353,6 +361,7 @@ img {
   transition: all 200ms ease-in-out;
   opacity: 1;
   top: 0rem;
+  right: 2rem;
 }
 .menu__titre::after {
   font-size: 2rem;
@@ -374,6 +383,7 @@ img {
   opacity: 0;
   background-image: linear-gradient(to top, rgb(216, 140, 224), rgb(176, 78, 206));
   top: 0rem;
+  right: 2rem;
 }
 .menu__titre:hover::after {
   opacity: 1;
@@ -394,30 +404,43 @@ img {
   left: 0rem;
   top: 1.7rem;
 }
+@media (min-width: 1000px) {
+  .menucartes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    padding: 2rem;
+  }
+}
+
 .menucarte {
-  background-color: white;
-  border-radius: 1rem 1rem 1rem 1rem;
-  padding: 0rem 1rem;
-  margin-bottom: 1rem;
-  display: flex;
-  flex-direction: column;
+  margin: 1rem;
+  border-radius: 1rem;
   box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
 }
 .menucarte__titre {
-  margin-bottom: -10px;
+  padding-bottom: 0.3rem;
 }
 .menucarte__description {
   display: flex;
+  padding: 1rem;
+}
+.menucarte__description p {
+  margin: auto;
+}
+.menucarte__annotation {
+  font-size: 0.95rem;
 }
 .menucarte__prix {
+  padding-top: 1rem;
   margin-left: auto;
-  margin-top: auto;
   font-weight: bold;
 }
 
 .commander {
   display: flex;
   justify-content: center;
+  margin-top: -2rem;
   padding-bottom: 2rem;
   background-color: #F3F3F3;
 }

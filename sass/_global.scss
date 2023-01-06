@@ -17,6 +17,11 @@ h2 {
     margin-left: 1rem;
 }
 
+h4 {
+    margin: 0;
+    padding: 0;
+}
+
 a { 
     text-decoration: none;
     color: inherit;
@@ -46,10 +51,11 @@ img {
 .basdepage {
     background-color: v.$fond-noir;
     color: v.$txt-fond-sombre;
-    padding: 1rem;
+    padding: 0.5rem 0rem;
   
         &__logo {
             font-family: "Shrikhand", cursive;
+            padding-left: 2.6rem;
         }
 
         &__liens {
