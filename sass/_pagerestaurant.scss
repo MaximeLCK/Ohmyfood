@@ -2,18 +2,24 @@
 @use "./variables" as v;
 @use "./animations" as a;
 
-.hautdepage --avecretour {
-    position: relative;
+#page-resto{
 
-    &__fa-solid {
+.hautdepage::before {
+        position: relative;
+        @include m.font-awesome($font-weight:900);
+        content: "\f060";
         position: absolute;
-        left:2rem;
+        left: 1.5rem;  
+        font-size: 20px;      
     }
-
+  
+.hautdepage
     &__img {
     object-fit: cover;
+    display: block;
+    height: 70vh;
     }
-}
+
 
 .menu {
     background-color: v.$fond-grisclair;
@@ -32,16 +38,17 @@
         font-family: "Shrikhand", cursive;
         font-size: 2rem;
         position: relative;
+
         &::before {
             @include m.coeur;
-            top:0rem;
-            right: 2rem;           
+            top:0.3rem;
+            right: 1.5rem;           
         }
         &::after {
             @include m.coeur($opacity:0, $font-weight:900, $color:transparent);
             @include m.gradient-primary;
-            top:0rem;
-            right: 2rem;
+            top:0.3rem;
+            right: 1.5rem;
         }
         &:hover::after {
             opacity: 1;
@@ -91,17 +98,25 @@
     @include m.box-shadow-primary;
     margin: 1rem;
     overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 
 
     &__titre {
-
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
     }
 
     &__description {
         padding: 1rem;
         p {
             margin: auto;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
         }
+        overflow: hidden;       
     }
 
     &__text {
@@ -125,6 +140,7 @@
         transition: margin-right 0.75s;
         display: grid;
         place-items: center;
+        flex-shrink: 0;
 
         & i {
             display: grid;
@@ -161,5 +177,7 @@
  
 
     }
+
+}
 
 }
