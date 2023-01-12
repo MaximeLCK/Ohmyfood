@@ -1,6 +1,6 @@
 @use "./mixins" as m;
 @use "./variables" as v;
-@use "./animations" as a;
+@use "./animations";
 
 #page-resto{
 
@@ -98,9 +98,15 @@
     @include m.box-shadow-primary;
     margin: 1rem;
     overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-
+    animation: apparition 1s;
+    $numberofmenucarte:3;
+    @for $i from 1 through $numberofmenucarte {
+        &:nth-child(#{$i})
+        {
+            animation-delay: 100ms
+            * $i;
+        }
+    }
 
     &__titre {
         overflow: hidden;
