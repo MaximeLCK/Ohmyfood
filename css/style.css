@@ -70,6 +70,29 @@ img {
   list-style: none;
 }
 
+.loader {
+  position: fixed;
+  display: grid;
+  place-items: center;
+  background-color: black;
+  height: 100vh;
+  inset: 0;
+  z-index: 1;
+  opacity: 0.8;
+  animation: chargement 1s 2s;
+  animation-fill-mode: forwards;
+}
+.loader::after {
+  content: "";
+  width: 6rem;
+  height: 6rem;
+  border-top: 5px solid #9356DC;
+  border-right: 5px solid #FF79DA;
+  border-bottom: 5px solid #99E2D0;
+  border-radius: 50%;
+  animation: spin 2s infinite linear;
+}
+
 /* Localisation */
 .localisation {
   display: flex;
@@ -336,6 +359,19 @@ img {
   100% {
     transform: translateY(0);
     opacity: 1;
+  }
+}
+@keyframes chargement {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
   }
 }
 #page-resto .hautdepage::before {
