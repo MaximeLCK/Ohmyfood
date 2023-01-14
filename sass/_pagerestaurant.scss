@@ -98,7 +98,7 @@
     @include m.box-shadow-primary;
     margin: 1rem;
     overflow: hidden;
-    animation: apparition 1s;
+    animation: apparition 1s ease-in;
     $numberofmenucarte:3;
     @for $i from 1 through $numberofmenucarte {
         &:nth-child(#{$i})
