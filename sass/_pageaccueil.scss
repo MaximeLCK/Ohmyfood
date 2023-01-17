@@ -97,7 +97,7 @@ animation-fill-mode: forwards;
             flex-grow: 1;
             position: relative;
             &:hover {
-               background-color: lighten(v.$color-primary,35%) ;
+               background-color: lighten(v.$color-primary,35%);
                transform: scale(1.05);
                & i{
                 color:v.$color-primary;
@@ -177,7 +177,7 @@ gap: 2rem;
         @for $i from 1 through 4 {
             &__img-#{$i} {
                 background-image: url("../images/restaurants/menu-#{$i}.jpg");
-                @media (min-width:992){
+                @media (min-width:992px){
                     height: 15rem;
                 }
             }

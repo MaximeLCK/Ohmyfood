@@ -248,7 +248,7 @@ img {
 .carte__img-1 {
   background-image: url("../images/restaurants/menu-1.jpg");
 }
-@media (min-width: 992) {
+@media (min-width: 992px) {
   .carte__img-1 {
     height: 15rem;
   }
@@ -256,7 +256,7 @@ img {
 .carte__img-2 {
   background-image: url("../images/restaurants/menu-2.jpg");
 }
-@media (min-width: 992) {
+@media (min-width: 992px) {
   .carte__img-2 {
     height: 15rem;
   }
@@ -264,7 +264,7 @@ img {
 .carte__img-3 {
   background-image: url("../images/restaurants/menu-3.jpg");
 }
-@media (min-width: 992) {
+@media (min-width: 992px) {
   .carte__img-3 {
     height: 15rem;
   }
@@ -272,7 +272,7 @@ img {
 .carte__img-4 {
   background-image: url("../images/restaurants/menu-4.jpg");
 }
-@media (min-width: 992) {
+@media (min-width: 992px) {
   .carte__img-4 {
     height: 15rem;
   }
@@ -348,7 +348,7 @@ img {
     transform: rotate(-360deg);
   }
   100% {
-    transform: rotate 0;
+    transform: rotate(0);
   }
 }
 @keyframes apparition {
@@ -534,7 +534,7 @@ img {
   background-color: white;
   border-radius: 1rem;
   width: 1.5rem;
-  aspect-ratio: 1;
+  aspect-ratio: 1/1;
   color: #99E2D0;
 }
 #page-resto .menucarte:hover .menucarte__check {
