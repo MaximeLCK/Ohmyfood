@@ -1,149 +1,190 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"/>
-	<script src="https://kit.fontawesome.com/fa61c38573.js" crossorigin="anonymous"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/fa61c38573.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="../css/style.css" />
 
     <title>Menu - A la française</title>
-</head>
+  </head>
 
-<body id="page-resto">
-    
-     <!-- Haut de page -->
-     <a href="../index.html">
-        <header class="hautdepage">
-            <h1 class="hautdepage__logo">ohmyfood</h1>
-        </header>
+  <body id="page-resto">
+    <!-- Haut de page -->
+    <a href="../index.html">
+      <header class="hautdepage">
+        <h1 class="hautdepage__logo">ohmyfood</h1>
+      </header>
     </a>
 
-    <img src="../images/restaurants/menu-3.jpg" alt="" class="hautdepage__img">
+    <img
+      src="../images/restaurants/menu-3.jpg"
+      alt=""
+      class="hautdepage__img"
+    />
 
-<main>
-    <section class="menu">
-            <!-- Menu Titre -->
-            <div class="menu__hautdepage">
-                <h2 class="menu__titre">A la française</h2>
+    <main>
+      <section class="menu">
+        <!-- Menu Titre -->
+        <div class="menu__hautdepage">
+          <h2 class="menu__titre">A la française</h2>
+        </div>
+
+        <!-- Entrées -->
+        <h3 class="menu__soustitre">entrées</h3>
+
+        <section class="menucartes">
+          <div class="menucarte">
+            <div class="menucarte__description">
+              <h4 class="menucarte__titre">Tartare de poulpe acidulé</h4>
+              <p class="menucarte__text">Aux zestes d'orange</p>
             </div>
-    
-             <!-- Entrées -->
-                <h3 class="menu__soustitre">entrées</h3>
-    
-            <section class="menucartes">
-                    <div class="menucarte">
-                        <div class="menucarte__description">
-                            <h4 class="menucarte__titre">Tartare de poulpe acidulé</h4>
-                            <p class="menucarte__text">Aux zestes d'orange</p>
-                        </div>
-                        <span class="menucarte__prix">25€</span>
-                        <div class="menucarte__check"><i class="fa-solid fa-check"></i></div>
-                    </div>
-    
-                    <div class="menucarte">
-                        <div class="menucarte__description">
-                            <h4 class="menucarte__titre">Velouté de légumes d'antan</h4>
-                            <p class="menucarte__text">Carotte, panais, topinambour</p>
-                        </div>
-                        <span class="menucarte__prix">35€</span>
-                        <div class="menucarte__check"><i class="fa-solid fa-check"></i></div>
-                    </div>
-    
-                    <div class="menucarte">
-                        <div class="menucarte__description">
-                            <h4 class="menucarte__titre">Soupe à l'oignon</h4>
-                            <p class="menucarte__text">Revisitée</p>
-                        </div>
-                        <span class="menucarte__prix">20€</span>
-                        <div class="menucarte__check"><i class="fa-solid fa-check"></i></div>
-                    </div>
-            </section>
-         
-            <!-- Plats -->
-                <h3 class="menu__soustitre">PLATS</h3>
-    
-            <section class="menucartes">
-                    <div class="menucarte">
-                        <div class="menucarte__description">
-                            <h4 class="menucarte__titre">Coquille-Saint-Jacques</h4>
-                            <p class="menucarte__text">Accompagnées d'une purée de panais</p>
-                        </div>
-                        <span class="menucarte__prix">40€</span>
-                        <div class="menucarte__check"><i class="fa-solid fa-check"></i></div>
-                    </div>
-    
-                    <div class="menucarte">
-                        <div class="menucarte__description">
-                            <h4 class="menucarte__titre">Magret de canard</h4>
-                            <p class="menucarte__text">Et parmentier de pomme de terre</p>
-                        </div>
-                        <span class="menucarte__prix">35€</span>
-                        <div class="menucarte__check"><i class="fa-solid fa-check"></i></div>
-                    </div>
-    
-                    <div class="menucarte">
-                        <div class="menucarte__description">
-                            <h4 class="menucarte__titre">Mijoté de queue de boeuf</h4>
-                            <p class="menucarte__text">Sur mon lit de gnocchis aux légumes</p>
-                        </div>
-                        <span class="menucarte__prix">44€</span>
-                        <div class="menucarte__check"><i class="fa-solid fa-check"></i></div>
-                    </div>
-            </section>
-    
-            <!-- Desserts -->
-                <h3 class="menu__soustitre">DESSERTS</h3>
-    
-            <section class="menucartes">
-                    <div class="menucarte">
-                        <div class="menucarte__description">
-                            <h4 class="menucarte__titre">Pétales de violettes glacés</h4>
-                            <p class="menucarte__text">Et purée de noisettes</p>
-                        </div>
-                        <span class="menucarte__prix">18€</span>
-                        <div class="menucarte__check"><i class="fa-solid fa-check"></i></div>
-                    </div>
-    
-                    <div class="menucarte">
-                        <div class="menucarte__description">
-                            <h4 class="menucarte__titre">Fondant au chocolat</h4>
-                            <p class="menucarte__text">Revisité</p>
-                        </div>
-                        <span class="menucarte__prix">22€</span>
-                        <div class="menucarte__check"><i class="fa-solid fa-check"></i></div>
-                    </div>
-    
-                    <div class="menucarte">
-                        <div class="menucarte__description">
-                            <h4 class="menucarte__titre">Millefeuille croustillant</h4>
-                            <p class="menucarte__text">Myrtilles et pâte d'amande</p>
-                        </div>
-                        <span class="menucarte__prix">23€</span>
-                        <div class="menucarte__check"><i class="fa-solid fa-check"></i></div>
-                    </div>
-            </section>
-        </section>
-    
-        <section class="commander">
-                <button class="commander__btn">Commander</button>
+            <span class="menucarte__prix">25€</span>
+            <div class="menucarte__check">
+              <i class="fa-solid fa-check"></i>
+            </div>
+          </div>
+
+          <div class="menucarte">
+            <div class="menucarte__description">
+              <h4 class="menucarte__titre">Velouté de légumes d'antan</h4>
+              <p class="menucarte__text">Carotte, panais, topinambour</p>
+            </div>
+            <span class="menucarte__prix">35€</span>
+            <div class="menucarte__check">
+              <i class="fa-solid fa-check"></i>
+            </div>
+          </div>
+
+          <div class="menucarte">
+            <div class="menucarte__description">
+              <h4 class="menucarte__titre">Soupe à l'oignon</h4>
+              <p class="menucarte__text">Revisitée</p>
+            </div>
+            <span class="menucarte__prix">20€</span>
+            <div class="menucarte__check">
+              <i class="fa-solid fa-check"></i>
+            </div>
+          </div>
         </section>
 
-    <!-- Bas de page -->
-    <section class="basdepage">
+        <!-- Plats -->
+        <h3 class="menu__soustitre">PLATS</h3>
+
+        <section class="menucartes">
+          <div class="menucarte">
+            <div class="menucarte__description">
+              <h4 class="menucarte__titre">Coquille-Saint-Jacques</h4>
+              <p class="menucarte__text">Accompagnées d'une purée de panais</p>
+            </div>
+            <span class="menucarte__prix">40€</span>
+            <div class="menucarte__check">
+              <i class="fa-solid fa-check"></i>
+            </div>
+          </div>
+
+          <div class="menucarte">
+            <div class="menucarte__description">
+              <h4 class="menucarte__titre">Magret de canard</h4>
+              <p class="menucarte__text">Et parmentier de pomme de terre</p>
+            </div>
+            <span class="menucarte__prix">35€</span>
+            <div class="menucarte__check">
+              <i class="fa-solid fa-check"></i>
+            </div>
+          </div>
+
+          <div class="menucarte">
+            <div class="menucarte__description">
+              <h4 class="menucarte__titre">Mijoté de queue de boeuf</h4>
+              <p class="menucarte__text">Sur mon lit de gnocchis aux légumes</p>
+            </div>
+            <span class="menucarte__prix">44€</span>
+            <div class="menucarte__check">
+              <i class="fa-solid fa-check"></i>
+            </div>
+          </div>
+        </section>
+
+        <!-- Desserts -->
+        <h3 class="menu__soustitre">DESSERTS</h3>
+
+        <section class="menucartes">
+          <div class="menucarte">
+            <div class="menucarte__description">
+              <h4 class="menucarte__titre">Pétales de violettes glacés</h4>
+              <p class="menucarte__text">Et purée de noisettes</p>
+            </div>
+            <span class="menucarte__prix">18€</span>
+            <div class="menucarte__check">
+              <i class="fa-solid fa-check"></i>
+            </div>
+          </div>
+
+          <div class="menucarte">
+            <div class="menucarte__description">
+              <h4 class="menucarte__titre">Fondant au chocolat</h4>
+              <p class="menucarte__text">Revisité</p>
+            </div>
+            <span class="menucarte__prix">22€</span>
+            <div class="menucarte__check">
+              <i class="fa-solid fa-check"></i>
+            </div>
+          </div>
+
+          <div class="menucarte">
+            <div class="menucarte__description">
+              <h4 class="menucarte__titre">Millefeuille croustillant</h4>
+              <p class="menucarte__text">Myrtilles et pâte d'amande</p>
+            </div>
+            <span class="menucarte__prix">23€</span>
+            <div class="menucarte__check">
+              <i class="fa-solid fa-check"></i>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <section class="commander">
+        <button class="commander__btn">Commander</button>
+      </section>
+
+      <!-- Bas de page -->
+      <section class="basdepage">
         <p class="basdepage__logo">ohmyfood</p>
-            <ul>
-                <li class="basdepage__list"><a class="basdepage__liens" href="#"><i class="fa-solid fa-utensils"></i><span class="basdepage__text">Proposer un restaurant</span> </a></li>
-                <li class="basdepage__list"><a class="basdepage__liens" href="#"><i class="fa-solid fa-handshake-angle"></i><span class="basdepage__text2">Devenir partenaire</span></a></li>
-                <li class="basdepage__list"><a class="basdepage__liens" href="#"><span>Mentions légales</span></a></li>
-                <li class="basdepage__list"><a class="basdepage__liens" href="mailto:maxime.leuck@gmail.com"><span>Contact</span></a></li>
-            </ul>
-    </section>
-
-
-
-</main>
-
-</body>
+        <ul>
+          <li class="basdepage__list">
+            <a class="basdepage__liens" href="#"
+              ><i class="fa-solid fa-utensils"></i
+              ><span class="basdepage__text">Proposer un restaurant</span>
+            </a>
+          </li>
+          <li class="basdepage__list">
+            <a class="basdepage__liens" href="#"
+              ><i class="fa-solid fa-handshake-angle"></i
+              ><span class="basdepage__text2">Devenir partenaire</span></a
+            >
+          </li>
+          <li class="basdepage__list">
+            <a class="basdepage__liens" href="#"
+              ><span>Mentions légales</span></a
+            >
+          </li>
+          <li class="basdepage__list">
+            <a class="basdepage__liens" href="mailto:maxime.leuck@gmail.com"
+              ><span>Contact</span></a
+            >
+          </li>
+        </ul>
+      </section>
+    </main>
+  </body>
 </html>

@@ -1,74 +1,81 @@
 @use "./variables" as v;
 
 @mixin flex-center($direction) {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction:$direction;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: $direction;
 }
 
 @mixin flex-wrap {
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 @mixin btn-primary {
-    color: v.$txt-fond-sombre;
-    @include gradient-primary();
-    border-radius: 10rem;
-    padding: 1rem 2rem;
-    border: 0;
-    box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
-    cursor: pointer;
-    transition-duration: 0.5s;
-    font-size: 0.9rem;
-  
+  color: v.$txt-fond-sombre;
+  @include gradient-primary();
+  border-radius: 10rem;
+  padding: 1rem 2rem;
+  border: 0;
+  box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  transition-duration: 0.5s;
+  font-size: 0.9rem;
 
-    &:hover {
-        @include btn-hover-primary; 
-    }
+  &:hover {
+    @include btn-hover-primary;
+  }
 }
 
 @mixin btn-hover-primary {
-    background-image:linear-gradient(to top, rgb(220, 152, 228),rgb(179, 93, 206));
-    box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.50);
-    transform: scale(1.1);
+  background-image: linear-gradient(
+    to top,
+    rgb(220, 152, 228),
+    rgb(179, 93, 206)
+  );
+  box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.5);
+  transform: scale(1.1);
 }
 
 @mixin gradient-primary {
-    background-image:linear-gradient(to top, rgb(216, 140, 224),rgb(176, 78, 206));
+  background-image: linear-gradient(
+    to top,
+    rgb(216, 140, 224),
+    rgb(176, 78, 206)
+  );
 }
 
 @mixin box-shadow-primary {
-    box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
+  box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
 }
 
-@mixin font-awesome($font-weight:400) {
-    display: inline-block;
-    font-style: normal;
-    font-variant: normal;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-    font-family: "Font Awesome 5 Free"; 
-    font-weight: $font-weight; 
+@mixin font-awesome($font-weight: 400) {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Font Awesome 5 Free";
+  font-weight: $font-weight;
 }
 
-@mixin coeur($opacity:1, $font-weight:400, $color:inherit) {
-    font-size: 2rem;
-    position: absolute;
-    right:1rem;
-    top:1.5rem;
-    display: inline-block;
-    font-style: normal;
-    font-variant: normal;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-    font-family: "Font Awesome 5 Free"; 
-    font-weight: $font-weight; 
-    content: "\f004";
-    color: $color;
-    background-clip: text;
-    -webkit-background-clip: text;
-    transition: all 200ms ease-in-out;
-    opacity: $opacity;
+@mixin coeur($opacity: 1, $font-weight: 400, $color: inherit) {
+  font-size: 2rem;
+  position: absolute;
+  right: 1rem;
+  top: 1.5rem;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Font Awesome 5 Free";
+  font-weight: $font-weight;
+  content: "\f004";
+  color: $color;
+  background-clip: text;
+  -webkit-background-clip: text;
+  transition: all 200ms ease-in-out;
+  opacity: $opacity;
 }

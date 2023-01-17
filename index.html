@@ -1,116 +1,156 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"/>
-	<script src="https://kit.fontawesome.com/fa61c38573.js" crossorigin="anonymous"></script>
-    <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png">
-    <link rel="manifest" href="./images/favicon/site.webmanifest">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/fa61c38573.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./images/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./images/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./images/favicon/site.webmanifest" />
     <link rel="stylesheet" href="css/style.css" />
     <title>Accueil OhMyFood</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <!-- Loader -->
-    <div class="loader">
-    </div>
+    <div class="loader"></div>
     <!-- Haut de Page -->
     <header class="hautdepage">
-        <h1 class="hautdepage__logo">ohmyfood</h1>
+      <h1 class="hautdepage__logo">ohmyfood</h1>
     </header>
 
-<main>
-    <!-- Localisation -->
-    <div class="localisation">
+    <main>
+      <!-- Localisation -->
+      <div class="localisation">
         <i class="fas fa-map-marker-alt"></i>
-	    <input class="localisation__form" type="text" name="location" placeholder="Paris, Belleville" />
-    </div>
+        <input
+          class="localisation__form"
+          type="text"
+          name="location"
+          placeholder="Paris, Belleville"
+        />
+      </div>
 
-    <!-- Titre -->
-    <section class="titreprincipal">
-        <h2 class="titreprincipal__titre">Réservez le menu qui vous convient</h2>
-        <p class="titreprincipal__soustitre">Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
+      <!-- Titre -->
+      <section class="titreprincipal">
+        <h2 class="titreprincipal__titre">
+          Réservez le menu qui vous convient
+        </h2>
+        <p class="titreprincipal__soustitre">
+          Découvrez des restaurants d'exception, sélectionnés par nos soins.
+        </p>
         <!-- <a href="#restaurant"><button class="titreprincipal__btn">Explorer nos restaurants</button></a> -->
         <button class="titreprincipal__btn">Explorer nos restaurants</button>
-    </section>
+      </section>
 
-    <!-- Fonctionnement -->
-    <section class="fonctionnement">
+      <!-- Fonctionnement -->
+      <section class="fonctionnement">
         <h2 class="fonctionnement__titre">Fonctionnement</h2>
         <ol class="fonctionnement__btn">
-            <li class="fonctionnement__btn-flex">
-                <i class="fonctionnement__icon fa-solid fa-mobile-screen-button"></i><span class="text">Choisissez un restaurant</span>
-            </li>
-            <li class="fonctionnement__btn-flex">
-                <i class="fonctionnement__icon fa-solid fa-list"></i><span class="text">Composez votre menu</span>
-            </li>
-            <li class="fonctionnement__btn-flex">
-                <i class="fonctionnement__icon fa-solid fa-store"></i><span class="text">Dégustez au restaurant</span>
-            </li>
+          <li class="fonctionnement__btn-flex">
+            <i class="fonctionnement__icon fa-solid fa-mobile-screen-button"></i
+            ><span class="text">Choisissez un restaurant</span>
+          </li>
+          <li class="fonctionnement__btn-flex">
+            <i class="fonctionnement__icon fa-solid fa-list"></i
+            ><span class="text">Composez votre menu</span>
+          </li>
+          <li class="fonctionnement__btn-flex">
+            <i class="fonctionnement__icon fa-solid fa-store"></i
+            ><span class="text">Dégustez au restaurant</span>
+          </li>
         </ol>
-    </section>
+      </section>
 
-    <!-- Restaurants -->
-    <section class="restaurants" id="restaurant">
+      <!-- Restaurants -->
+      <section class="restaurants" id="restaurant">
         <h2 class="restaurants__titre">Restaurants</h2>
 
         <div class="cartes">
+          <a href="./pages/resto-1.html" class="carte">
+            <div class="carte__img carte__img-1"></div>
+            <span class="carte__nouveau">Nouveau</span>
+            <div class="carte__description">
+              <h3 class="carte__titre">La palette du goût</h3>
+              <p class="carte__soustitre">Ménilmontant</p>
+            </div>
+          </a>
 
-            <a href="./pages/resto-1.html" class="carte">
-                <div class="carte__img carte__img-1"></div>
-                <span class="carte__nouveau">Nouveau</span>
-                <div class="carte__description">
-                    <h3 class="carte__titre">La palette du goût</h3>
-                    <p class="carte__soustitre">Ménilmontant</p>
-                </div>
-            </a>
-    
-            <a href="./pages/resto-2.html" class="carte">
-                <div class="carte__img carte__img-2"></div>
-                <span class="carte__nouveau">Nouveau</span>
-                <div class="carte__description">
-                    <h3 class="carte__titre">La note enchantée</h3>
-                    <p class="carte__soustitre">Charonne</p>
-                </div>
-            </a>
+          <a href="./pages/resto-2.html" class="carte">
+            <div class="carte__img carte__img-2"></div>
+            <span class="carte__nouveau">Nouveau</span>
+            <div class="carte__description">
+              <h3 class="carte__titre">La note enchantée</h3>
+              <p class="carte__soustitre">Charonne</p>
+            </div>
+          </a>
 
-            <a href="./pages/resto-3.html" class="carte">
-                <div class="carte__img carte__img-3"></div>
-                    <!-- <span class="carte__nouveau">Nouveau</span> -->
-                    <div class="carte__description">
-                        <h3 class="carte__titre">A la française</h3>
-                        <p class="carte__soustitre">Cité Rouge</p>
-                    </div>
-            </a>
-    
-            <a href="./pages/resto-4.html" class="carte">
-                <div class="carte__img carte__img-4"></div>
-                <!-- <span class="carte__nouveau">Nouveau</span> -->
-                <div class="carte__description">
-                    <h3 class="carte__titre">Le délice des sens</h3>
-                    <p class="carte__soustitre">Folie-Méricourt</p>
-                </div>
-            </a>
+          <a href="./pages/resto-3.html" class="carte">
+            <div class="carte__img carte__img-3"></div>
+            <!-- <span class="carte__nouveau">Nouveau</span> -->
+            <div class="carte__description">
+              <h3 class="carte__titre">A la française</h3>
+              <p class="carte__soustitre">Cité Rouge</p>
+            </div>
+          </a>
 
+          <a href="./pages/resto-4.html" class="carte">
+            <div class="carte__img carte__img-4"></div>
+            <!-- <span class="carte__nouveau">Nouveau</span> -->
+            <div class="carte__description">
+              <h3 class="carte__titre">Le délice des sens</h3>
+              <p class="carte__soustitre">Folie-Méricourt</p>
+            </div>
+          </a>
         </div>
-    </section>
-</main>
+      </section>
+    </main>
     <!-- Bas de page -->
     <section class="basdepage">
-        <p class="basdepage__logo">ohmyfood</p>
-            <ul>
-                <li class="basdepage__list"><a class="basdepage__liens" href="#"><i class="fa-solid fa-utensils"></i><span class="basdepage__text">Proposer un restaurant</span> </a></li>
-                <li class="basdepage__list"><a class="basdepage__liens" href="#"><i class="fa-solid fa-handshake-angle"></i><span class="basdepage__text2">Devenir partenaire</span></a></li>
-                <li class="basdepage__list"><a class="basdepage__liens" href="#"><span>Mentions légales</span></a></li>
-                <li class="basdepage__list"><a class="basdepage__liens" href="mailto:maxime.leuck@gmail.com"><span>Contact</span></a></li>
-            </ul>
+      <p class="basdepage__logo">ohmyfood</p>
+      <ul>
+        <li class="basdepage__list">
+          <a class="basdepage__liens" href="#">
+            <i class="fa-solid fa-utensils"></i>
+            <span class="basdepage__text">Proposer un restaurant</span>
+          </a>
+        </li>
+        <li class="basdepage__list">
+          <a class="basdepage__liens" href="#">
+            <i class="fa-solid fa-handshake-angle"></i>
+            <span class="basdepage__text2">Devenir partenaire</span></a>
+        </li>
+        <li class="basdepage__list">
+          <a class="basdepage__liens" href="#"><span>Mentions légales</span></a>
+        </li>
+        <li class="basdepage__list">
+          <a class="basdepage__liens" href="mailto:maxime.leuck@gmail.com"
+            ><span>Contact</span></a>
+        </li>
+      </ul>
     </section>
-
-
-</body>
-
+  </body>
 </html>

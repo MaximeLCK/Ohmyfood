@@ -2,188 +2,172 @@
 @use "./variables" as v;
 @use "./animations";
 
-#page-resto{
+#page-resto {
+  .hautdepage::before {
+    position: relative;
+    @include m.font-awesome($font-weight: 900);
+    content: "\f060";
+    position: absolute;
+    left: 1.5rem;
+    font-size: 20px;
+  }
 
-.hautdepage::before {
-        position: relative;
-        @include m.font-awesome($font-weight:900);
-        content: "\f060";
-        position: absolute;
-        left: 1.5rem;  
-        font-size: 20px;      
-    }
-  
-.hautdepage
-    &__img {
+  .hautdepage &__img {
     object-fit: cover;
     display: block;
     height: 70vh;
-    }
+  }
 
-
-.menu {
+  .menu {
     background-color: v.$fond-grisclair;
     padding: 1rem 1rem;
-    border-radius: 2rem 2rem 0 0; 
+    border-radius: 2rem 2rem 0 0;
     position: relative;
-    bottom:2rem;
- 
+    bottom: 2rem;
 
     &__hautdepage {
-   
-
     }
 
     &__titre {
-        font-family: "Shrikhand", cursive;
-        font-size: 2rem;
-        position: relative;
+      font-family: "Shrikhand", cursive;
+      font-size: 2rem;
+      position: relative;
 
-        &::before {
-            @include m.coeur;
-            top:0.3rem;
-            right: 1.5rem;           
-        }
-        &::after {
-            @include m.coeur($opacity:0, $font-weight:900, $color:transparent);
-            @include m.gradient-primary;
-            top:0.3rem;
-            right: 1.5rem;
-        }
-        &:hover::after {
-            opacity: 1;
-            transform: scale(1.2);
-        }
+      &::before {
+        @include m.coeur;
+        top: 0.3rem;
+        right: 1.5rem;
+      }
+      &::after {
+        @include m.coeur($opacity: 0, $font-weight: 900, $color: transparent);
+        @include m.gradient-primary;
+        top: 0.3rem;
+        right: 1.5rem;
+      }
+      &:hover::after {
+        opacity: 1;
+        transform: scale(1.2);
+      }
     }
 
     &__soustitre {
-        font-weight: 400;
-        text-transform: uppercase;
-        position: relative;
-        &::after{
-            content :"";
-            background-color: v.$color-tertiary;
-            height:0.25rem;
-            width:3rem;
-            display: inline-block;
-            position: absolute;
-            left:0rem;
-            top:1.7rem;
-        }
+      font-weight: 400;
+      text-transform: uppercase;
+      position: relative;
+      &::after {
+        content: "";
+        background-color: v.$color-tertiary;
+        height: 0.25rem;
+        width: 3rem;
+        display: inline-block;
+        position: absolute;
+        left: 0rem;
+        top: 1.7rem;
+      }
     }
 
-
     &__btn-like {
-   
     }
 
     &__navigation {
-      
     }
+  }
 
-}
-
-.menucartes {
-@media (min-width:v.$breakpoint){
-    display : grid;
-    grid-template-columns: repeat(3,1fr);
-    gap : 1rem;
-    padding : 2rem;
+  .menucartes {
+    @media (min-width: v.$breakpoint) {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+      padding: 2rem;
     }
-}
+  }
 
-.menucarte {
+  .menucarte {
     display: flex;
     border-radius: 1rem;
     @include m.box-shadow-primary;
     margin: 1rem;
     overflow: hidden;
     animation: apparition 1s ease-in;
-    $numberofmenucarte:3;
+    $numberofmenucarte: 3;
     @for $i from 1 through $numberofmenucarte {
-        &:nth-child(#{$i})
-        {
-            animation-delay: 100ms
-            * $i;
-        }
+      &:nth-child(#{$i}) {
+        animation-delay: 100ms * $i;
+      }
     }
 
     &__titre {
-        overflow: hidden;
-        white-space: nowrap;
-        text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
     }
 
     &__description {
-        padding: 1rem;
-        p {
-            margin: auto;
-            overflow: hidden;
-            white-space: nowrap;
-            text-overflow: ellipsis;
-        }
-        overflow: hidden;       
+      padding: 1rem;
+      p {
+        margin: auto;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+      overflow: hidden;
     }
 
     &__text {
-        font-size: 0.95rem;
+      font-size: 0.95rem;
     }
 
     &__prix {
-        margin-left: auto;
-        font-weight: bold;
-        padding: 1rem;
-        font-size: 0.95rem;
-        display: flex;
-        align-items: flex-end;
+      margin-left: auto;
+      font-weight: bold;
+      padding: 1rem;
+      font-size: 0.95rem;
+      display: flex;
+      align-items: flex-end;
     }
 
     &__check {
-        background-color: v.$color-tertiary;
-        border-radius: 0rem 1rem 1rem 0rem;
-        width: 4rem;
-        margin-right: -4rem;
-        transition: margin-right 0.75s;
+      background-color: v.$color-tertiary;
+      border-radius: 0rem 1rem 1rem 0rem;
+      width: 4rem;
+      margin-right: -4rem;
+      transition: margin-right 0.75s;
+      display: grid;
+      place-items: center;
+      flex-shrink: 0;
+
+      & i {
         display: grid;
         place-items: center;
-        flex-shrink: 0;
-
-        & i {
-            display: grid;
-            place-items: center;
-            background-color: white;
-            border-radius: 1rem;
-            width: 1.5rem;
-            aspect-ratio: 1/1;
-            color: v.$color-tertiary;
-        }
+        background-color: white;
+        border-radius: 1rem;
+        width: 1.5rem;
+        aspect-ratio: 1/1;
+        color: v.$color-tertiary;
+      }
     }
 
     &:hover {
-        .menucarte__check{
-            margin-right: 0;
-        }
+      .menucarte__check {
+        margin-right: 0;
+      }
 
-        i {
-            animation: icone360 0.75s;
-        }
+      i {
+        animation: icone360 0.75s;
+      }
     }
-}
+  }
 
-.commander {
+  .commander {
     display: flex;
     justify-content: center;
     margin-top: -2rem;
     padding-bottom: 2rem;
     background-color: v.$fond-grisclair;
     &__btn {
-        @include m.btn-primary;
-        display: grid;
-        place-items: center;
- 
-
+      @include m.btn-primary;
+      display: grid;
+      place-items: center;
     }
-
-}
-
+  }
 }
