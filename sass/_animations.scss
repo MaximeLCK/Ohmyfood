@@ -1,3 +1,4 @@
+// rotation icone check dans page restaurant
 @keyframes icone360 {
   0% {
     transform: rotate(-360deg);
@@ -7,6 +8,7 @@
   }
 }
 
+// apparition des plats dans page restaurant
 @keyframes apparition {
   0% {
     transform: translateY(50%);
@@ -18,6 +20,7 @@
   }
 }
 
+// loader qui apparait puis disparait
 @keyframes chargement {
   0% {
     transform: scale(1);
@@ -27,6 +30,7 @@
   }
 }
 
+// loader qui tourne
 @keyframes spin {
   to {
     transform: rotate(360deg);
