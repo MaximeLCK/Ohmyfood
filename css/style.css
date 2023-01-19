@@ -51,6 +51,12 @@ img {
   color: white;
   padding: 0.5rem 0rem;
 }
+@media (min-width: 768px) {
+  .basdepage {
+    display: grid;
+    place-items: center;
+  }
+}
 .basdepage__logo {
   font-family: "Shrikhand", cursive;
   padding-left: 2.6rem;

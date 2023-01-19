@@ -51,6 +51,10 @@ img {
   background-color: v.$fond-noir;
   color: v.$txt-fond-sombre;
   padding: 0.5rem 0rem;
+  @media (min-width:768px) {
+    display: grid;
+    place-items: center;
+  }
 
   &__logo {
     font-family: "Shrikhand", cursive;
