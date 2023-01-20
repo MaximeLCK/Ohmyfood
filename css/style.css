@@ -220,6 +220,7 @@ img {
     padding-top: 2rem;
   }
 }
+
 .cartes {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
@@ -315,7 +316,7 @@ img {
   color: inherit;
   background-clip: text;
   -webkit-background-clip: text;
-  transition: all 200ms ease-in-out;
+  transition: all 0.2s ease-in-out;
   opacity: 1;
 }
 .carte__description::after {
@@ -334,7 +335,7 @@ img {
   color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
-  transition: all 200ms ease-in-out;
+  transition: all 0.2s ease-in-out;
   opacity: 0;
   background-image: linear-gradient(to top, rgb(216, 140, 224), rgb(176, 78, 206));
 }
@@ -428,7 +429,7 @@ img {
   color: inherit;
   background-clip: text;
   -webkit-background-clip: text;
-  transition: all 200ms ease-in-out;
+  transition: all 0.2s ease-in-out;
   opacity: 1;
   top: 0.3rem;
   right: 1.5rem;
@@ -449,7 +450,7 @@ img {
   color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
-  transition: all 200ms ease-in-out;
+  transition: all 0.2s ease-in-out;
   opacity: 0;
   background-image: linear-gradient(to top, rgb(216, 140, 224), rgb(176, 78, 206));
   top: 0.3rem;
@@ -491,13 +492,13 @@ img {
   animation: apparition 1s ease-in;
 }
 #page-resto .menucarte:nth-child(1) {
-  animation-delay: 100ms;
+  animation-delay: 0.1s;
 }
 #page-resto .menucarte:nth-child(2) {
-  animation-delay: 200ms;
+  animation-delay: 0.2s;
 }
 #page-resto .menucarte:nth-child(3) {
-  animation-delay: 300ms;
+  animation-delay: 0.3s;
 }
 #page-resto .menucarte__titre {
   overflow: hidden;
@@ -533,7 +534,6 @@ img {
   transition: margin-right 0.75s;
   display: grid;
   place-items: center;
-  flex-shrink: 0;
 }
 #page-resto .menucarte__check i {
   display: grid;

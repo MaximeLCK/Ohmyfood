@@ -83,7 +83,7 @@
     $numberofmenucarte: 3;
     @for $i from 1 through $numberofmenucarte {
       &:nth-child(#{$i}) {
-        animation-delay: 100ms * $i;
+        animation-delay: 0.1s * $i;
       }
     }
 
@@ -125,7 +125,6 @@
       transition: margin-right 0.75s;
       display: grid;
       place-items: center;
-      flex-shrink: 0;
 
       & i {
         display: grid;
